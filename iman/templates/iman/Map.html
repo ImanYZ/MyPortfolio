@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+  .column {
+    border:1px solid black;
+  }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    // Returns width of browser viewport
+  var windowWidth = $( window ).width();
+  var windowHeight = $( window ).height();
+    jQuery('<div/>', {
+        id: 'foo',
+        class: 'column',
+        href: 'http://google.com',
+        title: 'Become a Googler',
+        rel: 'external',
+        text: 'Go to Google!'
+    }).appendTo('#mapDIV');
+});
+</script>
+</head>
+<body>
+  <div id="mapDIV"></div>
+
+</body>
+</html>

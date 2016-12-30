@@ -1,0 +1,279 @@
+html {
+  height: 100%;
+}
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  height: 100%;
+  margin: 0;
+  padding-top: 58px;
+  padding-bottom: 40px;
+/*  background-color: rgb(234, 173, 253);*/
+  background: #000040; /* for non-css3 browsers */
+  /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#57aee8', endColorstr='#36cd96'); /* for IE */*/
+  /*background: -webkit-gradient(linear, left top, left bottom, from(#57aee8), to(#36cd96)); /* for webkit browsers */*/
+  /*background: -moz-linear-gradient(top,  #57aee8,  #36cd96); /* for firefox 3.6+ */*/
+  /*background: linear-gradient(to bottom,#57aee8 0,#36cd96 100%);*/
+  /*background-repeat: no-repeat;*/
+  /*background-attachment: fixed;*/
+}
+
+/*a {
+  color: #57aee8;
+}
+a:hover, a:visited, a:link, a:active {
+  color: #57aee8;
+}
+
+*/.btn-semi-transparent {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 7px 0px;
+  width: 100px;
+  background: #fff; /* fallback color for old browsers */
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.1s ease-out;
+}
+
+.btn-semi-transparent:hover {
+  background: #fff;
+  color: #0089e4;
+  transition: all 0.1s ease-in;
+}
+
+.btn-semi-transparent > a {
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: all 0.1s ease-out;
+}
+
+.btn-semi-transparent:hover > a {
+  text-decoration: none;
+  color: #0089e4;
+}
+
+input.transparent-input {
+  background-color:transparent !important;
+  color: white;
+  border: 1px solid #fff;
+}
+
+input.transparent-input:focus {
+  border: 1px solid #fff;
+}
+
+input.transparent-input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+input.transparent-input:-moz-placeholder { /* Firefox 18- */
+  color: rgba(255, 255, 255, 0.7);  
+}
+
+input.transparent-input::-moz-placeholder {  /* Firefox 19+ */
+  color: rgba(255, 255, 255, 0.7);  
+}
+
+input.transparent-input:-ms-input-placeholder {  
+  color: rgba(255, 255, 255, 0.7);  
+}
+
+.headerCol {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#NavbarLogo {
+  color: white;
+  font-size: 31px;
+  text-decoration: none;
+  text-shadow: 2px 2px #000000;
+}
+
+#NavbarLogo img {
+  margin-top: -4px;
+  margin-bottom: -4px;
+}
+
+.container-fluid {
+  padding-left: 31px;
+  padding-right: 31px;
+}
+
+.navbar-inverse {
+  background: transparent;
+  background-color: #000040;
+/*  background-image: url("../images/backgrounds/old-wood-texture.jpg");
+  background-image: url("../images/backgrounds/old-wood-texture.jpg");
+  background-image: url("../images/backgrounds/old-wood-texture.jpg");
+*/  /*background-repeat: repeat-x;*/
+  /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(0,0,0,0.7)', endColorstr='rgba(0,0,0,0)', GradientType=0);*/
+  border-style: none;
+}
+
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  border-style: none;
+}
+
+.navbar-inverse .navbar-toggle {
+  border-color: white;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover  {
+  background: transparent;
+}
+
+#SearchBox {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#SearchBox .input-group {
+  width: 100%;
+}
+
+#SearchBox .form-control {
+  width: 100%;
+}
+
+#SearchBox .input-group-btn {
+  width: 49px;
+}
+
+.navbar-fixed-bottom {
+  background-color: #000040;
+/*  background-image: url("../images/backgrounds/old-wood-texture-Upsidedown.jpg");
+  background-image: url("../images/backgrounds/old-wood-texture-Upsidedown.jpg");
+  background-image: url("../images/backgrounds/old-wood-texture-Upsidedown.jpg");
+*/  /*background-repeat: repeat-x;*/
+  /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(0,0,0,0.85)', endColorstr='rgba(0,0,0,0)', GradientType=0);*/
+  margin-bottom: -1px;
+/*  height: 40px;
+*/  line-height: 40px;
+  min-height:25px !important;
+}
+
+.navbar-inverse .active {
+  background: transparent;
+  border-style: none;
+  font-weight: bold;
+}
+
+.navbar-inverse a {
+  /*background-color: #0088e2 !important;*/
+  /*background: transparent !important;*/
+}
+
+/*.navbar-fixed-bottom .active a {
+  background-color: #00d285 !important;
+}
+*/
+.navbar .nav > li.dropdown.open > a {
+/*  background-color: #0088e2;
+  border-color: #fff;*/
+  background: transparent !important;
+}
+
+.navbar .nav > li.dropdown > .dropdown-menu > li > a {
+  color: #FFFFFF;
+}
+
+.navbar .nav > li.dropdown > .dropdown-menu > li > a:hover,
+.navbar .nav > li.dropdown > .dropdown-menu > li > a:focus {
+  color: #acacad;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: white;
+}
+
+.navbar-fixed-bottom > .container-fluid a {
+  color: white;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/*#ImanSignature {
+  font-family: 'Great Vibes', cursive;
+  font-size: 22px;
+}
+*/
+.navbar-fixed-bottom > .container-fluid > .navbar-collapse > .navbar-nav {
+  margin: 10px -16px;
+  padding-bottom: 4px;
+}
+
+.dropdown-menu {
+  background-color: #4a4a4c;
+}
+
+.navbar-fixed-bottom > .container-fluid > .navbar-collapse > .navbar-nav > .dropdown > .dropdown-menu > li > a > .footer-icon {
+  font-size: 19px;
+}
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+  max-height: 43px;
+  padding-top: 10px;
+  margin-left: -15px;
+}
+
+div#AvatarDIV {
+  position: fixed;
+  width: 160px;
+  height: 160px;
+  left: 22px;
+  bottom: 22px;
+}
+
+@media (max-width: 957px) {
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: #FFFFFF;
+  }
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus,
+  .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
+    color: #acacad;
+  }
+  .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
+    background-color: #FFFFFF;
+  }
+}
+
+
+/*.navbar { background:#c300ff; border-bottom:none;  border-style: none;
+ }
+.navbar .nav > li > a {color: #501762;}
+.navbar .nav > li > a:hover {color: #fff; background-color: #c300ff;}
+.navbar .nav .active > a,.navbar .nav .active > a:hover {color: #fff; background-color: #a015cc;}
+.navbar .nav li > a .caret, .tnav .navbar .nav li > a:hover .caret {border-top-color: #fff;border-bottom-color: #fff;}
+.navbar .nav > li.dropdown.open.active > a:hover {}
+.navbar .nav > li.dropdown.open > a {color: #fff;background-color: #9f58b5;border-color: #fff;}
+.navbar .nav > li.dropdown.open.active > a:hover .caret, .tnav .navbar .nav > li.dropdown.open > a .caret {border-top-color: #fff;}
+.navbar .navbar-brand {color:#fff;}
+.navbar .nav.pull-right {margin-left: 10px; margin-right: 0;}
+.navbar-xs .navbar { min-height:28px; height: 28px; }
+.navbar-xs .navbar .navbar-brand{ padding: 0px 12px;font-size: 16px;line-height: 28px; }
+.navbar-xs .navbar .navbar-nav > li > a {  padding-top: 0px; padding-bottom: 0px; line-height: 28px; }
+.navbar-sm .navbar { min-height:40px; height: 40px; }
+.navbar-sm .navbar .navbar-brand{ padding: 0px 12px;font-size: 16px;line-height: 40px; }
+.navbar-sm .navbar .navbar-nav > li > a {  padding-top: 0px; padding-bottom: 0px; line-height: 40px; }
+*/
+/*.panel {
+  border-color: #eea236;
+}
+*/
+

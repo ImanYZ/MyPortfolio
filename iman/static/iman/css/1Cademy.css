@@ -1,0 +1,336 @@
+#Grid .panel .panel-heading {
+  background-image: none;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  padding: 10px;
+  border-color: #ddd;
+}
+
+#Grid .panel .panel-body {
+  padding: 10px 10px 10px 10px;
+}
+
+.grid-item {
+  width: 310px;
+  margin-bottom: -10px;
+}
+
+#New-Post {
+  display: none;
+}
+
+.TextareaLabel {
+  color: #57aee8;
+}
+
+#New-Post-Instructions,
+.editable {
+  margin-bottom: 10px;
+}
+
+#New-Answer {
+  margin-bottom: 10px;
+}
+
+.select2-search__field {
+  width: 100%;
+  font-size: 13px;
+}
+
+.tagit-label {
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.rankings-bar {
+  margin: 0px;
+  margin-bottom: 4px;
+}
+
+.row-table {
+  width: 100%;
+}
+
+.Vote-Link {
+  color: black;
+  text-decoration: none;
+  float: left;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+.Vote-Link:hover, .Vote-Link:visited, .Vote-Link:link, .Vote-Link:active {
+  text-decoration: none;
+  color: black;
+}
+
+.Vote-Link:hover {
+  -webkit-box-shadow: 0px 0px 4px #57aee8;
+  -moz-box-shadow: 0px 0px 4px #57aee8;
+  box-shadow: 0px 0px 4px #57aee8;
+}
+
+.Avatar-td {
+  text-align: center;
+}
+
+.Avatar-td .unknown-avatar {
+  font-size: 28px;
+}
+
+.Avatar-Link {
+  margin-left: 0px;
+  color: gray;
+  text-decoration: none;  
+  text-align: center;
+}
+
+.Avatar-Link-DIV {
+  width: 34px;
+  height: 34px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Avatar-Link:hover, .Avatar-Link:visited, .Avatar-Link:link, .Avatar-Link:active {
+  text-decoration: none;
+  color: gray;
+}
+
+.Avatar-Link:hover {
+  -webkit-box-shadow: 0px 0px 4px #57aee8;
+  -moz-box-shadow: 0px 0px 4px #57aee8;
+  box-shadow: 0px 0px 4px #57aee8;
+}
+
+.Avatar-Link:hover .Avatar-Link-DIV {
+  -webkit-box-shadow: 0px 0px 4px #57aee8;
+  -moz-box-shadow: 0px 0px 4px #57aee8;
+  box-shadow: 0px 0px 4px #57aee8;
+}
+
+.user-miniprofile-header {
+  color: black;
+  font-size: 16px;
+  margin-bottom: 7px;
+}
+
+.Mini-Profile-Avatar {
+  text-align: center;
+}
+
+.Avatar-Link-Details .unknown-avatar {
+  font-size: 43px;
+}
+
+.Footer-Details hr {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.Avatar-Link-Details,
+.Creation-Date-Details,
+.ApprovePost-Details,
+.ApprovePost-Details,
+.Comment-Details,
+.Tags-Details,
+.Learn-Before-Details,
+.References-Details,
+.Share-Details,
+.Learn-After-Details {
+  display: none;
+}
+
+.Minimize-minus {
+  color: #f0ad4e;
+}
+
+.unknown-avatar {
+  color: #f0ad4e;
+}
+
+.Creation-Date {
+  color: #bdbdbd;
+  text-align: center;
+  float: none;
+}
+
+.created-pencil {
+  color: #f0ad4e;
+}
+
+.Bookmark-bookmark {
+  color: #f0ad4e;
+}
+
+.Learn-Before-chevron-left {
+  color: #f0ad4e;
+}
+
+.References-book {
+  font-size: 16px;
+  color: #57aee8;
+}
+
+.Learn-After-chevron-right {
+  color: #36cd96;
+}
+
+.Tags-tags {
+  color: #57aee8;
+}
+
+.Majors-folder-open {
+  font-size: 16.9px;
+  color: #36cd96;
+}
+
+.Schools-graduation-cap {
+  color: #f0ad4e;
+}
+
+.Reject-remove {
+  color: #ff0000;
+}
+
+.approved-ok {
+  color: #36cd96;
+}
+
+.loved-heart {
+  color: #ff0000;
+}
+
+.comment-comments {
+  font-size: 16px;
+  color: #f04ed2;
+}
+
+.share-fa-share-alt {
+  font-size: 16px;
+  color: #d94ef0;
+}
+
+.tag-icon {
+  color: #57aee8;
+  padding-right: 4px;
+}
+
+.Reply-reply {
+  color: #f0ad4e;
+}
+
+.Comment-Textarea {
+  margin-bottom: 7px;
+}
+
+.facebook-share-facebook {
+  font-size: 16px;
+  color: #3b5998;
+}
+
+.google-share-google-plus {
+  font-size: 16px;
+  color: #dd4b39;
+}
+
+.linkedin-share-linkedin {
+  font-size: 16px;
+  color: #007bb6;
+}
+
+.reddit-share-reddit {
+  font-size: 16px;
+  color: #000000;
+}
+
+.twitter-share-twitter {
+  font-size: 16px;
+  color: #55acee;
+}
+
+.Ranking-Column {
+  width: 55px;
+}
+
+.Ranking-Details .unknown-avatar {
+  font-size: 22px;
+}
+
+.Ranking-Details img {
+  vertical-align: baseline;
+}
+
+.media-left .unknown-avatar {
+  font-size: 22px;
+}
+
+.Icon-Column {
+  width: 25px;
+}
+
+.lightbulb-o-icon {
+  color: #f0ad4e;
+  font-size: 22px;
+}
+
+#LoadingImg {
+  margin-bottom: 40px;
+}
+
+#LoadingText {
+  position: relative;
+  top: 79px;
+  color: #FFFFFF;
+  font-size: 19px;
+}
+
+.youtube-container {
+  display: block;
+  margin: 0px auto;
+  width: 100%;
+  max-width: 600px;
+}
+.youtube-player {
+  display: block;
+  width: 100%; /* assuming that the video has a 16:9 ratio */
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: hand;
+  cursor: pointer;
+  display: block;
+}
+img.youtube-thumb {
+  bottom: 0;
+  display: block;
+  left: 0;
+  margin: auto;
+  max-width: 100%;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: auto
+}
+div.play-button {
+  height: 72px;
+  width: 72px;
+  left: 50%;
+  top: 50%;
+  margin-left: -36px;
+  margin-top: -36px;
+  position: absolute;
+  background: url("http://i.imgur.com/TxzC70f.png") no-repeat;
+}
+.youtube-iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+

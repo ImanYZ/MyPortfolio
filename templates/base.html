@@ -1,0 +1,198 @@
+{% load static from staticfiles %}
+
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://getbootstrap.com/examples/theme/# -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="Iman YeckehZaare">
+
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/Logo/favicon.png' %}">
+
+    <title>{% block head_title %}Iman's Portfolio!{% endblock %}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+    <!-- Font-Awesome CSS -->
+    <link href="{% static 'fonts/font-awesome-4.6.3/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <!-- bootstrap-social CSS -->
+    <link href="{% static 'css/bootstrap-social.css' %}" rel="stylesheet" type="text/css">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="{% static 'css/ie10-viewport-bug-workaround.css' %}" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this project -->
+    <link href="{% static 'css/base.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/registration.css' %}" rel="stylesheet" type="text/css">
+
+    <link href="{% static 'iman/css/1Cademy.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'jquery-ui-1.12.1/jquery-ui.min.css' %}" rel="stylesheet" type="text/css">
+    <!--<link href="{% static 'iman/css/jquery.tagit.css' %}" rel="stylesheet" type="text/css">-->
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="{% static 'js/ie-emulation-modes-warning.js' %}"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body role="document">
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div id="HeaderContainer" class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a id="NavbarLogo" class="navbar-left pull-left" href="{% url 'iman:index' %}">
+              <img src="/media/images/Logo/Logo_Share_Knowledge_White.svg" alt="1Cademy Logo" width="58px">
+            </a>
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul id="FiltersNavbar" class="nav navbar-nav navbar">
+              <li><a href="{% url 'iman:index' %}" title="Would you like to know about me?">About Me!</a></li>
+              <li><a href="{% url 'iman:SBEE' %}" title="Social, Behavioral, and Experimental Econommics">BEE</a></li>
+              <li><a href="{% url 'iman:CSCL' %}" title="Computer-Supported Cooperative Learning">CSCL</a></li>
+              <li><a href="{% url 'iman:CSCW' %}" title="Computer-Supported Cooperative Work">CSCW</a></li>
+              <li><a href="/ML" title="Machine Learning">ML</a></li>
+            </ul>
+          </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <div id="OneContent" class="container-fluid">
+    {% block content %}
+    {% endblock %}
+    </div> <!-- /container -->
+
+    <footer>
+      <nav class="navbar navbar-inverse navbar-fixed-bottom">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#footer-body" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{% url 'iman:index' %}">Iman YeckehZaare<span class="sr-only">(current)</span></a>
+          </div>
+          <div class="collapse navbar-collapse" id="footer-body">
+            <ul class="nav navbar-nav">
+              <li><a href="{% static 'iman/images/Contents/Iman_YeckehZaare_Resume.pdf' %}">Résumé</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact&nbsp;<span class="caret"></a>
+                <ul class="dropdown-menu">
+                  <li><a href="skype:+17345565922?call"><i class="fa fa-phone-square footer-icon" aria-hidden="true"></i>&nbsp; +1 (734) 556-5922</a></li>
+                  <li><a href="mailto:oneweb@umich.edu"><i class="fa fa-envelope footer-icon" aria-hidden="true"></i>&nbsp; oneweb@umich.edu</a></li>
+                  <li><a href="skype:iman.yeckehzaare"><i class="fa fa-skype footer-icon" aria-hidden="true"></i>&nbsp; iman.yeckehzaare</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="https://www.google.com/maps/place/North+Quadrangle+Residential+and+Academic+Complex/@42.280738,-83.7423658,17z/data=!3m1!4b1!4m5!3m4!1s0x883cae406bf1f7cb:0xefd29040373a695a!8m2!3d42.280738!4d-83.7401718">School of Information <br>
+                  University of Michigan <br>
+                  4340 North Quad <br>
+                  105 S. State St. <br>
+                  Ann Arbor, MI 48109-1285</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Links&nbsp;<span class="caret"></a>
+                <ul class="dropdown-menu">
+                  <li><a href="http://www.linkedin.com/in/oneweb"><i class="fa fa-linkedin-square footer-icon" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp; www.linkedin.com/in/oneweb</a></li>
+                  <li><a href="http://stackoverflow.com/users/2521204/iman"><i class="fa fa-stack-overflow footer-icon" style= aria-hidden="true"></i>&nbsp; stackoverflow.com/users/2521204/iman</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/User:I.yeckehzaare"><i class="fa fa-wikipedia-w footer-icon" aria-hidden="true"></i>&nbsp; en.wikipedia.org/wiki/User:I.yeckehzaare</a></li>
+                  <li><a href="https://www.si.umich.edu/people/iman-yeckehzaare"><img src="{% static 'iman/images/Logos/UMSI.gif' %}" class="img-responsive pull-left" alt="SI.UMICH Homepage" width="49px" height="49px">&nbsp; si.umich.edu/people/iman-yeckehzaare</a></li>
+                  <li><a href="https://www.facebook.com/imanyekezare"><i class="fa fa-facebook-square footer-icon" aria-hidden="true"></i>&nbsp; www.facebook.com/imanyekezare</a></li>
+                  <li><a href="https://twitter.com/Iman1Web"><i class="fa fa-twitter footer-icon" aria-hidden="true"></i>&nbsp; twitter.com/Iman1Web</a></li>
+                  <li><a href="http://youtu.be/P7NkGLgUGYo"><i class="fa fa-youtube-play footer-icon" aria-hidden="true"></i>&nbsp; youtu.be/P7NkGLgUGYo</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div><!-- /.container-fluid -->
+      </nav>
+    </footer>
+
+    <div id="AvatarDIV">
+      <a href="{% url 'iman:index' %}">
+        <img src="{% static 'iman/images/Avatars/Iman-YeckehZaare.png' %}" class="img-responsive" alt="Iman's Avatar">
+      </a>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script>window.jQuery || document.write('<script src="static/js/jquery.min.js"><\/script>')</script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!-- <script src="bootstrap-3.3.6-dist/js/docs.min.js"></script> -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="{% static 'js/ie10-viewport-bug-workaround.js' %}"></script>
+    <script src="{% static 'jquery-ui-1.12.1/jquery-ui.js' %}"></script>
+    <script src="https://swx.cdn.skype.com/shared/v/1.2.15/SkypeBootstrap.min.js"></script>
+
+    <script type="text/javascript">
+      function SetSearchBarWidth() {
+        var windowWidth = $(window).width();
+        var containerObj = $('#HeaderContainer');
+        var containerWidth = parseInt(containerObj.css('width')) - parseInt(containerObj.css('padding-left')) - parseInt(containerObj.css('padding-right'));
+        var navbarHeader = containerObj.find('.navbar-header');
+        var navbarLogo = navbarHeader.find('#NavbarLogo');
+        var navbarLogoWidth = parseInt(navbarLogo.css('width'));
+        // var searchBox = navbarHeader.find('#SearchBox');
+        // searchBox.css('width', (containerWidth - navbarLogoWidth) + "px");
+        // if (windowWidth > 940) {
+        //   var signInSignUpForm = $('#SignInSignUpForm');
+        //   var signInSignUpFormWidth = parseInt(signInSignUpForm.css('width'));
+        //   var navbarCollapseUL = $('#FiltersNavbar');
+        //   var navbarCollapseULWidth = parseInt(navbarCollapseUL.css('width'));
+        //   searchBox.css('width', parseInt(searchBox.css('width')) - navbarCollapseULWidth - signInSignUpFormWidth + "px");
+        // }
+        // else {
+        //   var toggleButton = navbarHeader.find('.navbar-toggle');
+        //   var toggleButtonWidth = parseInt(toggleButton.css('width')) + parseInt(toggleButton.css('margin-right'));
+        //   searchBox.css('width', parseInt(searchBox.css('width'))- toggleButtonWidth + "px");
+        // }
+      }
+
+      function LoadandResize() {
+        SetSearchBarWidth();
+{% block sloadandresizecontent %}{% endblock %}
+      }
+
+      $(window).resize(function(){
+        LoadandResize();
+      });
+
+      $( document ).ready(function() {
+{% block sdocumentready %}{% endblock %}
+      });
+
+      $(window).load(function() {
+        $(document).tooltip({
+            content: function () {
+                return $(this).prop('title');
+            }
+        });
+        LoadandResize()
+      });
+
+    </script>
+
+{% block scontent %}{% endblock %}
+
+  </body>
+</html>

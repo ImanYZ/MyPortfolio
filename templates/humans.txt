@@ -1,0 +1,18 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Iman -- Developer -- @Iman1Web
+    Saeed -- Developer -- @saeid64
+
+# THANKS
+
+    Thanks to Professor Yan Chen, Professor Paul Resnick, Professor Mark Ackerman, Dr. Norman Rapino, Professor Charles Severance, Professor Adel Torkaman Rahmani, and all other people who advised us on this project.
+
+# TECHNOLOGY COLOPHON
+    
+    Python 3, Django, Django-Allauth, Django-Countries, Django-Localflavor, coverage, Selenium, pytz, requests
+    HTML5, CSS3
+    Twitter Bootstrap
+    jQuery, Masonry.js
