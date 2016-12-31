@@ -27,7 +27,7 @@ DEBUG = True
 
 ADMINS = (('Iman', 'oneweb@umich.edu'))
 
-ALLOWED_HOSTS = ['iman.us-west-2.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['iman.us-west-2.elasticbeanstalk.com', 'www.iman.one']
 
 
 # Application definition
