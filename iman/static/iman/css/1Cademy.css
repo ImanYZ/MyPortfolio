@@ -1,10 +1,83 @@
+/*#LoadingFooter {
+  width: 508px;
+  height: 508px;
+}
+*/
+
+#AboutMe {
+  font-size: 19px;
+  color: #5D9CEC;
+  padding: 10px 40px 10px 40px;
+}
+
 #Grid .panel .panel-heading {
-  background-image: none;
-  background-color: white;
-  color: black;
-  font-size: 16px;
+  font-size: 19px;
   padding: 10px;
-  border-color: #ddd;
+}
+
+.panel-BlueJeans {
+  border-color: #5D9CEC;
+}
+.panel-BlueJeans > .panel-heading {
+  color: #FFFFFF;
+  background-color: #4A89DC;
+  border-color: #5D9CEC;
+}
+.panel-Aqua {
+  border-color: #4FC1E9;
+}
+.panel-Aqua > .panel-heading {
+  color: #FFFFFF;
+  background-color: #3BAFDA;
+  border-color: #4FC1E9;
+}
+.panel-Mint {
+  border-color: #48CFAD;
+}
+.panel-Mint > .panel-heading {
+  color: #FFFFFF;
+  background-color: #37BC9B;
+  border-color: #48CFAD;
+}
+.panel-Grass {
+  border-color: #A0D468;
+}
+.panel-Grass > .panel-heading {
+  color: #FFFFFF;
+  background-color: #8CC152;
+  border-color: #A0D468;
+}
+.panel-Sunflower {
+  border-color: #FFCE54;
+}
+.panel-Sunflower > .panel-heading {
+  color: #FFFFFF;
+  background-color: #F6BB42;
+  border-color: #FFCE54;
+}
+.panel-Bittersweet {
+  border-color: #FC6E51;
+}
+.panel-Bittersweet > .panel-heading {
+  color: #FFFFFF;
+  background-color: #E9573F;
+  border-color: #FC6E51;
+}
+.panel-Lavender {
+  border-color: #AC92EC;
+}
+.panel-Lavender > .panel-heading {
+  color: #FFFFFF;
+  background-color: #967ADC;
+  border-color: #AC92EC;
+}
+.panel-PinkRose {
+  border-color: #EC87C0;
+}
+.panel-PinkRose > .panel-heading {
+  color: #FFFFFF;
+  background-color: #D770AD;
+  border-color: #EC87C0;
 }
 
 #Grid .panel .panel-body {
@@ -143,7 +216,7 @@
 }
 
 .Minimize-minus {
-  color: #f0ad4e;
+  color: #FFFFFF;
 }
 
 .unknown-avatar {
@@ -191,7 +264,7 @@
 }
 
 .Reject-remove {
-  color: #ff0000;
+  color: #FFFFFF;
 }
 
 .approved-ok {
@@ -273,17 +346,6 @@
 .lightbulb-o-icon {
   color: #f0ad4e;
   font-size: 22px;
-}
-
-#LoadingImg {
-  margin-bottom: 40px;
-}
-
-#LoadingText {
-  position: relative;
-  top: 79px;
-  color: #FFFFFF;
-  font-size: 19px;
 }
 
 .youtube-container {

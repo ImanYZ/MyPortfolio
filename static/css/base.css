@@ -8,13 +8,17 @@ body {
   padding-top: 58px;
   padding-bottom: 40px;
 /*  background-color: rgb(234, 173, 253);*/
-  background: #000040; /* for non-css3 browsers */
-  /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#57aee8', endColorstr='#36cd96'); /* for IE */*/
-  /*background: -webkit-gradient(linear, left top, left bottom, from(#57aee8), to(#36cd96)); /* for webkit browsers */*/
-  /*background: -moz-linear-gradient(top,  #57aee8,  #36cd96); /* for firefox 3.6+ */*/
-  /*background: linear-gradient(to bottom,#57aee8 0,#36cd96 100%);*/
-  /*background-repeat: no-repeat;*/
-  /*background-attachment: fixed;*/
+  background: #57aee8; /* for non-css3 browsers */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#57aee8', endColorstr='#36cd96'); /* for IE */
+  /*background: -webkit-gradient(linear, left top, left bottom, from(#57aee8), to(#FFFFFF)); /* for webkit browsers */*/
+  /*background: -moz-linear-gradient(top,  #57aee8,  #FFFFFF); /* for firefox 3.6+ */*/
+  /*background: linear-gradient(to bottom,#57aee8 0,#FFFFFF 100%);*/
+  background: -webkit-linear-gradient(#57aee8, #36cd96); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#57aee8, #36cd96); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#57aee8, #36cd96); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#57aee8, #36cd96); /* Standard syntax */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /*a {
@@ -22,9 +26,20 @@ body {
 }
 a:hover, a:visited, a:link, a:active {
   color: #57aee8;
+}*/
+
+#LoadingImg {
+  margin-bottom: 40px;
 }
 
-*/.btn-semi-transparent {
+#LoadingText {
+  position: relative;
+  top: 145px;
+  color: #FFFFFF;
+  font-size: 31px;
+}
+
+.btn-semi-transparent {
   box-sizing: border-box;
   margin: 0 auto;
   padding: 7px 0px;
@@ -107,7 +122,7 @@ input.transparent-input:-ms-input-placeholder {
 
 .navbar-inverse {
   background: transparent;
-  background-color: #000040;
+  background-color: #57aee8;
 /*  background-image: url("../images/backgrounds/old-wood-texture.jpg");
   background-image: url("../images/backgrounds/old-wood-texture.jpg");
   background-image: url("../images/backgrounds/old-wood-texture.jpg");
@@ -156,7 +171,7 @@ input.transparent-input:-ms-input-placeholder {
 }
 
 .navbar-fixed-bottom {
-  background-color: #000040;
+  background-color: #36cd96;
 /*  background-image: url("../images/backgrounds/old-wood-texture-Upsidedown.jpg");
   background-image: url("../images/backgrounds/old-wood-texture-Upsidedown.jpg");
   background-image: url("../images/backgrounds/old-wood-texture-Upsidedown.jpg");
@@ -184,28 +199,30 @@ input.transparent-input:-ms-input-placeholder {
 }
 */
 .navbar .nav > li.dropdown.open > a {
-/*  background-color: #0088e2;
-  border-color: #fff;*/
+/*  background-color: #0088e2;*/
+  border-color: #fff;
   background: transparent !important;
 }
 
-.navbar .nav > li.dropdown > .dropdown-menu > li > a {
+/*.navbar .nav > li.dropdown > .dropdown-menu > li > a {
   color: #FFFFFF;
 }
-
-.navbar .nav > li.dropdown > .dropdown-menu > li > a:hover,
+*/
+/*.navbar .nav > li.dropdown > .dropdown-menu > li > a:hover,
 .navbar .nav > li.dropdown > .dropdown-menu > li > a:focus {
   color: #acacad;
 }
-
+*/
 .navbar-inverse .navbar-nav > li > a {
   color: white;
+  font-size: 19px;
 }
 
 .navbar-fixed-bottom > .container-fluid a {
   color: white;
   padding-top: 0px;
   padding-bottom: 0px;
+  background-color: #36cd96;
 }
 
 /*#ImanSignature {
@@ -218,25 +235,29 @@ input.transparent-input:-ms-input-placeholder {
   padding-bottom: 4px;
 }
 
-.dropdown-menu {
+/*.dropdown-menu {
   background-color: #4a4a4c;
 }
-
+*/
 .navbar-fixed-bottom > .container-fluid > .navbar-collapse > .navbar-nav > .dropdown > .dropdown-menu > li > a > .footer-icon {
   font-size: 19px;
+}
+
+.navbar-fixed-bottom > .container-fluid > .navbar-collapse > .navbar-nav > .dropdown > .dropdown-menu {
+  background-color: #36cd96;
 }
 
 .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
   max-height: 43px;
   padding-top: 10px;
   margin-left: -15px;
+  font-size: 19px;
 }
 
 div#AvatarDIV {
   position: fixed;
-  width: 160px;
-  height: 160px;
-  left: 22px;
+  width: 100%;
+  right: 0px;
   bottom: 22px;
 }
 
@@ -244,11 +265,11 @@ div#AvatarDIV {
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
     color: #FFFFFF;
   }
-  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus,
+/*  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus,
   .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
     color: #acacad;
   }
-  .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
+*/  .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
     background-color: #FFFFFF;
   }
 }

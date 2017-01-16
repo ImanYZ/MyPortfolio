@@ -47,6 +47,10 @@
 
   <body role="document">
 
+    <!--<div id="AvatarDIV">
+      <img src="/media/images/Background.jpg" class="img-responsive" alt="Iman's Picture in Nature.">
+    </div>-->
+
     <!-- Fixed navbar -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div id="HeaderContainer" class="container-fluid">
@@ -63,20 +67,25 @@
           </div>
           <div id="navbar" class="collapse navbar-collapse">
             <ul id="FiltersNavbar" class="nav navbar-nav navbar">
-              <li><a href="{% url 'iman:index' %}" title="Would you like to know about me?">About Me!</a></li>
-              <li><a href="{% url 'iman:SBEE' %}" title="Social, Behavioral, and Experimental Econommics">BEE</a></li>
-              <li><a href="{% url 'iman:CSCL' %}" title="Computer-Supported Cooperative Learning">CSCL</a></li>
-              <li><a href="{% url 'iman:CSCW' %}" title="Computer-Supported Cooperative Work">CSCW</a></li>
-              <li><a href="/ML" title="Machine Learning">ML</a></li>
+              <li><a href="{% url 'iman:SBEE' %}" title="Social, Behavioral, and Experimental Econommics">Experimental Design</a></li>
+              <li><a href="{% url 'iman:CSCL' %}" title="Computer-Supported Cooperative Learning">Learning Technologies</a></li>
+              <li><a href="{% url 'iman:CSCW' %}" title="Computer-Supported Cooperative Work">Interaction Design</a></li>
+              <li><a href="/ML" title="Machine Learning">Machine Learning</a></li>
             </ul>
           </div><!--/.navbar-collapse -->
       </div>
     </nav>
 
-    <div id="OneContent" class="container-fluid">
+    <div id="OneContent" class="container-fluid" style="display: none;">
     {% block content %}
     {% endblock %}
     </div> <!-- /container -->
+
+    <div id="LoadingBall">
+      <div id="LoadingText" class="text-center">Loading</div>
+      <img id="LoadingImg" src="{% static 'iman/images/1Loading.gif' %}" alt="Loading Animation"
+           class="img-responsive center-block" width="250px"/>
+    </div>
 
     <footer>
       <nav class="navbar navbar-inverse navbar-fixed-bottom">
@@ -119,17 +128,12 @@
                   <li><a href="http://youtu.be/P7NkGLgUGYo"><i class="fa fa-youtube-play footer-icon" aria-hidden="true"></i>&nbsp; youtu.be/P7NkGLgUGYo</a></li>
                 </ul>
               </li>
+              <li><a href="mailto:oneweb@umich.edu"><i class="fa fa-envelope footer-icon" aria-hidden="true"></i>&nbsp; Happy to chat about similar projects.</a></li>
             </ul>
           </div>
         </div><!-- /.container-fluid -->
       </nav>
     </footer>
-
-    <div id="AvatarDIV">
-      <a href="{% url 'iman:index' %}">
-        <img src="{% static 'iman/images/Avatars/Iman-YeckehZaare.png' %}" class="img-responsive" alt="Iman's Avatar">
-      </a>
-    </div>
 
 
     <!-- Bootstrap core JavaScript
@@ -182,6 +186,8 @@
       });
 
       $(window).load(function() {
+        $("#LoadingBall").hide();
+        $("#OneContent").show();
         $(document).tooltip({
             content: function () {
                 return $(this).prop('title');

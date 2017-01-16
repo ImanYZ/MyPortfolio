@@ -127,46 +127,6 @@ function mouseOver(obj) {
       $('#' + id).fadeIn(400);
 */
   $( "#" + id + "path3785BallL11" ).animate({
-      opacity: 0
-    }, 700, function() {
-      // Animation complete.
-    });
-  $( "#" + id + "path3785BallL12" ).animate({
-      opacity: 1
-    }, 700, function() {
-      // Animation complete.
-    });
-  $( "#" + id + "path3795BallL11" ).animate({
-      opacity: 0
-    }, 700, function() {
-      // Animation complete.
-    });
-  $( "#" + id + "path3795BallL12" ).animate({
-      opacity: 1
-    }, 700, function() {
-      // Animation complete.
-    });
-  $( "#" + id + "path3908" ).animate({
-      fill: "#FDEEF4"
-    }, 700, function() {
-      // Animation complete.
-    });
-  $( "#" + id + "path3811" ).animate({
-      fill: "#FDEEF4"
-    }, 700, function() {
-      // Animation complete.
-    });
-}
-
-function mouseOut(obj) {
-  var id = $(obj).attr("id");
-/*
-      $('#' + id + '_Bright > img').attr("src", id + '_Bright.png');
-      $('#' + id).hide();
-      $('#' + id + ' > img').attr("src", id + '.png');
-      $('#' + id).fadeIn(400);
-*/
-  $( "#" + id + "path3785BallL11" ).animate({
       opacity: 1
     }, 700, function() {
       // Animation complete.
@@ -193,6 +153,46 @@ function mouseOut(obj) {
     });
   $( "#" + id + "path3811" ).animate({
       fill: "#000000"
+    }, 700, function() {
+      // Animation complete.
+    });
+}
+
+function mouseOut(obj) {
+  var id = $(obj).attr("id");
+/*
+      $('#' + id + '_Bright > img').attr("src", id + '_Bright.png');
+      $('#' + id).hide();
+      $('#' + id + ' > img').attr("src", id + '.png');
+      $('#' + id).fadeIn(400);
+*/
+  $( "#" + id + "path3785BallL11" ).animate({
+      opacity: 0
+    }, 700, function() {
+      // Animation complete.
+    });
+  $( "#" + id + "path3785BallL12" ).animate({
+      opacity: 1
+    }, 700, function() {
+      // Animation complete.
+    });
+  $( "#" + id + "path3795BallL11" ).animate({
+      opacity: 0
+    }, 700, function() {
+      // Animation complete.
+    });
+  $( "#" + id + "path3795BallL12" ).animate({
+      opacity: 1
+    }, 700, function() {
+      // Animation complete.
+    });
+  $( "#" + id + "path3908" ).animate({
+      fill: "#FDEEF4"
+    }, 700, function() {
+      // Animation complete.
+    });
+  $( "#" + id + "path3811" ).animate({
+      fill: "#FDEEF4"
     }, 700, function() {
       // Animation complete.
     });
