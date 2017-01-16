@@ -33,6 +33,9 @@
     <link href="{% static 'jquery-ui-1.12.1/jquery-ui.min.css' %}" rel="stylesheet" type="text/css">
     <!--<link href="{% static 'iman/css/jquery.tagit.css' %}" rel="stylesheet" type="text/css">-->
 
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="{% static 'js/ie-emulation-modes-warning.js' %}"></script>
@@ -146,6 +149,10 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="{% static 'js/ie10-viewport-bug-workaround.js' %}"></script>
     <script src="{% static 'jquery-ui-1.12.1/jquery-ui.js' %}"></script>
+
+    <!-- Magnific Popup core JS file -->
+    <script src="{% static 'js/jquery.magnific-popup.js' %}"></script>
+
     <script src="https://swx.cdn.skype.com/shared/v/1.2.15/SkypeBootstrap.min.js"></script>
 
     <script type="text/javascript">
@@ -188,6 +195,7 @@
       $(window).load(function() {
         $("#LoadingBall").hide();
         $("#OneContent").show();
+        $('.image-link').magnificPopup({type:'image'});
         $(document).tooltip({
             content: function () {
                 return $(this).prop('title');

@@ -55,12 +55,25 @@
         <div class="grid-item">
             <div class="panel panel-BlueJeans">
                 <div class="panel-heading">
-                    Navable
+                    NavAble
                 </div>
                 <div class="panel-body">
                     <div class="post-content">
-                      <p>“Navable”, a wearable interactive map optimized for people with mobility disability. It is a solution designed specifically for solving mobility problems that our target users may encounter. Navable can work in both indoor and outdoor environments, navigate users to destinations, be capable of remembering users' pattern of regular routes, alert users to potential dangers, allow users to report and receive real-time contextual data, and enable users to remotely control environments. The desired experience that Navable intends to deliver is to foresee accessibility issues that user will encounter, solve accessibility problems that users are having, and remember/report past issues to prevent them from happening again.</p>
-                      <p>For more information, click <a href="http://collabwork.herokuapp.com/about-us/">here</a>.</p>
+                      <div style="width: 130px; height: 130px; float: left; margin-right: 10px;">
+                        <a id="NavAbleBallProudOf" href="{% url 'iman:navable' %}" onmouseenter="mouseOver(this)" onmouseleave="mouseOut(this)">
+                          <!--<img x="31" y="160" width="670" height="670" xlink:href="{% static 'iman/images/Contents/UX_Research.svg' %}" />-->
+                          <img x="10" y="160" width="670" height="670" xlink:href="{% static 'iman/images/Contents/People_With_Disability.svg' %}" />
+                        </a>
+                      </div>
+                      <p>Collaborators: Anna Muth, Iman Yeckehzaare, Noppawat Muktabhant, Wirithphol (Flash) Ek-Ularnpun, Zuo Tang</p>
+                      <a class="image-link" href="{% static 'iman/images/Contents/NavAble-thumb.jpg' %}">
+                        <img src="{% static 'iman/images/Contents/NavAble-thumb.jpg' %}" class="img-responsive img-rounded center-block">
+                      </a>
+                      <p>NavAble is a smartwatch interactive map application concept. It is a pervasive technology designed specifically to help empowering people with mobility disability. With NavAble, users are able to navigate to destination, indoor and outdoor, through a route that calculates with conditions of user’s disability (e.g. using wheelchair, weak muscle).</p>
+                      <div class="youtube-container">
+                          <div class="youtube-player" data-id="jpqYoJO5l9g"></div>
+                      </div>
+                      <p>For more information, click the ball on top of the post.</p>
                     </div>
                 </div>
             </div>

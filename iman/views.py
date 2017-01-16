@@ -58,6 +58,16 @@ def oniversity(request):
     return render(request, 'iman/1iversity.html', context)
 
 
+def navable(request):
+    context = {}
+    return render(request, 'iman/navable.html', context)
+
+
+def wecollabrify(request):
+    context = {}
+    return render(request, 'iman/WeCollabrify.html', context)
+
+
 def home_files(request, filename):
     return render(request, filename, {}, content_type="text/plain")
 
