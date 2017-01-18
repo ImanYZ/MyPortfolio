@@ -38,30 +38,31 @@ function AddNodeTools() {
     if ($( this ).children( ".panel" ).children( ".panel-body" ).children( ".post-content" ).length &&
       $( this ).children( ".panel" ).children( ".panel-body" ).children( ".post-content" ).children( "div" ).length &&
       $( this ).children( ".panel" ).children( ".panel-body" ).children( ".post-content" ).children( "div" ).children( "a" ).length) {
-      var svgContainerA = $( this ).children( ".panel" ).children( ".panel-body" )
-          .children( ".post-content" ).children( "div" ).children( "a" );
-      var svgContainerAID = svgContainerA.attr('id');
-      var aImage = svgContainerA.children( "img" );
-      var svgObj = $( "#WelcomeBlackDIV" ).find("#WelcomeBlackSVG").clone();
-      svgObj.attr("id", svgContainerAID + "SVG");
-      var svgImage = document.createElementNS('http://www.w3.org/2000/svg','image');
-      svgImage.setAttributeNS(null, "x", aImage.attr("x"))
-      svgImage.setAttributeNS(null, "y", aImage.attr("y"))
-      svgImage.setAttributeNS(null, "width", aImage.attr("width"))
-      svgImage.setAttributeNS(null, "height", aImage.attr("height"))
-      svgImage.setAttributeNS('http://www.w3.org/1999/xlink','href', aImage.attr("xlink:href"));
-      svgImage.setAttributeNS(null, 'visibility', 'visible');
-      svgObj.find( "#WelcomeBlackChangableSection" ).append(svgImage);
-      svgObj.find( "#WelcomeBlackChangableSection" ).attr("id", svgContainerAID + "ChangableSection");
-      svgObj.find( "#WelcomeBlackG" ).attr("id", svgContainerAID + "G");
-      svgObj.find( "#WelcomeBlackApath3785BallL11" ).attr("id", svgContainerAID + "path3785BallL11");
-      svgObj.find( "#WelcomeBlackApath3785BallL12" ).attr("id", svgContainerAID + "path3785BallL12");
-      svgObj.find( "#WelcomeBlackApath3795BallL11" ).attr("id", svgContainerAID + "path3795BallL11");
-      svgObj.find( "#WelcomeBlackApath3795BallL12" ).attr("id", svgContainerAID + "path3795BallL12");
-      svgObj.find( "#WelcomeBlackApath3908" ).attr("id", svgContainerAID + "path3908");
-      svgObj.find( "#WelcomeBlackApath3811" ).attr("id", svgContainerAID + "path3811");
-      svgContainerA.append(svgObj);
-      aImage.remove();
+      $( this ).children( ".panel" ).children( ".panel-body" )
+        .children( ".post-content" ).children( "div" ).children( "a" ).each(function () {
+        var svgContainerAID = $(this).attr('id');
+        var aImage = $(this).children( "img" );
+        var svgObj = $( "#WelcomeBlackDIV" ).find("#WelcomeBlackSVG").clone();
+        svgObj.attr("id", svgContainerAID + "SVG");
+        var svgImage = document.createElementNS('http://www.w3.org/2000/svg','image');
+        svgImage.setAttributeNS(null, "x", aImage.attr("x"));
+        svgImage.setAttributeNS(null, "y", aImage.attr("y"));
+        svgImage.setAttributeNS(null, "width", aImage.attr("width"));
+        svgImage.setAttributeNS(null, "height", aImage.attr("height"));
+        svgImage.setAttributeNS('http://www.w3.org/1999/xlink','href', aImage.attr("xlink:href"));
+        svgImage.setAttributeNS(null, 'visibility', 'visible');
+        svgObj.find( "#WelcomeBlackChangableSection" ).append(svgImage);
+        svgObj.find( "#WelcomeBlackChangableSection" ).attr("id", svgContainerAID + "ChangableSection");
+        svgObj.find( "#WelcomeBlackG" ).attr("id", svgContainerAID + "G");
+        svgObj.find( "#WelcomeBlackApath3785BallL11" ).attr("id", svgContainerAID + "path3785BallL11");
+        svgObj.find( "#WelcomeBlackApath3785BallL12" ).attr("id", svgContainerAID + "path3785BallL12");
+        svgObj.find( "#WelcomeBlackApath3795BallL11" ).attr("id", svgContainerAID + "path3795BallL11");
+        svgObj.find( "#WelcomeBlackApath3795BallL12" ).attr("id", svgContainerAID + "path3795BallL12");
+        svgObj.find( "#WelcomeBlackApath3908" ).attr("id", svgContainerAID + "path3908");
+        svgObj.find( "#WelcomeBlackApath3811" ).attr("id", svgContainerAID + "path3811");
+        $(this).append(svgObj);
+        aImage.remove();
+      });
     }
   });
 
