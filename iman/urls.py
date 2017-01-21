@@ -16,6 +16,7 @@ urlpatterns = [
     url(r'^Development/$', views.Development, name='Development'),
     url(r'^Entrepreneurship/$', views.Entrepreneurship, name='Entrepreneurship'),
     url(r'^ML/$', views.ML, name='ML'),
+    url(r'^Education/$', views.Education, name='Education'),
     url(r'^1iversity/$', views.oniversity, name='oniversity'),
     url(r'^navable/$', views.navable, name='navable'),
     url(r'^wecollabrify/$', views.wecollabrify, name='wecollabrify'),

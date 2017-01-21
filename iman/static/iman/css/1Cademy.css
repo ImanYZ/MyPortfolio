@@ -4,9 +4,9 @@
 }
 */
 
-#AboutMe {
+.AboutMe {
   font-size: 19px;
-  color: #5D9CEC;
+  color: #000000;
   padding: 10px 40px 10px 40px;
 }
 
@@ -78,6 +78,14 @@
   color: #FFFFFF;
   background-color: #D770AD;
   border-color: #EC87C0;
+}
+.panel-MediumGray {
+  border-color: #CCD1D9;
+}
+.panel-MediumGray > .panel-heading {
+  color: #FFFFFF;
+  background-color: #AAB2BD;
+  border-color: #CCD1D9;
 }
 
 #Grid .panel .panel-body {

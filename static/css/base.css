@@ -5,7 +5,7 @@ html {
 body {
   height: 100%;
   margin: 0;
-  padding-top: 58px;
+  padding-top: 70px;
   padding-bottom: 40px;
 /*  background-color: rgb(234, 173, 253);*/
   background: #57aee8; /* for non-css3 browsers */
@@ -27,6 +27,23 @@ body {
 a:hover, a:visited, a:link, a:active {
   color: #57aee8;
 }*/
+
+#ExperimentalDesign {
+text-decoration: none;
+border-bottom: 4px solid #F6BB42;
+}
+#CollaborativeLearning {
+text-decoration: none;
+border-bottom: 4px solid #967ADC;
+}
+#InteractionDesign {
+text-decoration: none;
+border-bottom: 4px solid #D770AD;
+}
+#MachineLearning {
+text-decoration: none;
+border-bottom: 4px solid #4A89DC;
+}
 
 #LoadingImg {
   margin-bottom: 40px;
@@ -104,10 +121,12 @@ input.transparent-input:-ms-input-placeholder {
 }
 
 #NavbarLogo {
-  color: white;
+/*  color: white;
   font-size: 31px;
   text-decoration: none;
   text-shadow: 2px 2px #000000;
+*/  text-decoration: none;
+  border-bottom: 4px solid #37BC9B;
 }
 
 #NavbarLogo img {

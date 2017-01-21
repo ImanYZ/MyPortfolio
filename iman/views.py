@@ -48,6 +48,11 @@ def Entrepreneurship(request):
     return render(request, 'iman/Entrepreneurship.html', context)
 
 
+def Education(request):
+    context = {}
+    return render(request, 'iman/Education.html', context)
+
+
 def ML(request):
     context = {}
     return render(request, 'iman/ML.html', context)

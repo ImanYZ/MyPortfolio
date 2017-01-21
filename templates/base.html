@@ -64,16 +64,16 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a id="NavbarLogo" class="navbar-left pull-left" href="{% url 'iman:index' %}">
+            <a id="NavbarLogo" class="navbar-left pull-left" title="About me!" href="{% url 'iman:index' %}">
               <img src="/media/images/Logo/Logo_Share_Knowledge_White.svg" alt="1Cademy Logo" width="58px">
             </a>
           </div>
           <div id="navbar" class="collapse navbar-collapse">
             <ul id="FiltersNavbar" class="nav navbar-nav navbar">
-              <li><a href="{% url 'iman:SBEE' %}" title="Social, Behavioral, and Experimental Econommics">Experimental Design</a></li>
-              <li><a href="{% url 'iman:CSCL' %}" title="Computer-Supported Cooperative Learning">Learning Technologies</a></li>
-              <li><a href="{% url 'iman:CSCW' %}" title="Computer-Supported Cooperative Work">Interaction Design</a></li>
-              <li><a href="/ML" title="Machine Learning">Machine Learning</a></li>
+              <li><a id="ExperimentalDesign" href="{% url 'iman:SBEE' %}" title="Social, Behavioral, and Experimental Econommics">Experimental Design</a></li>
+              <li><a id="CollaborativeLearning" href="{% url 'iman:CSCL' %}" title="Computer-Supported Collaborative Learning">Collaborative Learning</a></li>
+              <li><a id="InteractionDesign" href="{% url 'iman:CSCW' %}" title="Computer-Supported Cooperative Work">Interaction Design</a></li>
+              <li><a id="MachineLearning" href="/ML" title="Machine Learning">Machine Learning</a></li>
             </ul>
           </div><!--/.navbar-collapse -->
       </div>
@@ -104,7 +104,8 @@
           </div>
           <div class="collapse navbar-collapse" id="footer-body">
             <ul class="nav navbar-nav">
-              <li><a href="{% static 'iman/images/Contents/Iman_YeckehZaare_Resume.pdf' %}">Résumé</a></li>
+              <li><a href="{% static 'iman/images/Contents/Iman_YeckehZaare_Resume.pdf' %}" title="My Résumé">Résumé</a></li>
+              <li><a href="{% url 'iman:Education' %}" title="My Higher Education">My Higher Education</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact&nbsp;<span class="caret"></a>
                 <ul class="dropdown-menu">
@@ -131,7 +132,6 @@
                   <li><a href="http://youtu.be/P7NkGLgUGYo"><i class="fa fa-youtube-play footer-icon" aria-hidden="true"></i>&nbsp; youtu.be/P7NkGLgUGYo</a></li>
                 </ul>
               </li>
-              <li><a href="mailto:oneweb@umich.edu"><i class="fa fa-envelope footer-icon" aria-hidden="true"></i>&nbsp; Happy to chat about similar projects.</a></li>
             </ul>
           </div>
         </div><!-- /.container-fluid -->
