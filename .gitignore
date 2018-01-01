@@ -1,1 +1,26 @@
-db.sqlite3
+*.pyc
+*.sqlite3
+
+
+**/migrations/
+**/migrations/*
+*/static_Root/
+*/static_Root/*
+
+
+# Elastic Beanstalk Files
+
+.elasticbeanstalk/
+.elasticbeanstalk/*
+
+!.elasticbeanstalk/*.cfg.yml
+
+!.elasticbeanstalk/*.global.yml
+
+**/DataDump.json
+**/settings_secret.py
+*/polls/*
+*/polls/
+
+bfg.jar
+.git.bfg-report/*
